@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+
+
+body{
+	font-family: Lato;
+}
+
+.wrapper {
+	
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.top {
+	
+	&__row {
+			background: url(/img/top/Layer_7.png) center no-repeat;
+		display: flex;
+		padding: 35px 0 680px 0;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__left {
+		color: #4d4959;
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2.6px;
+		margin: 0 64px 0 0;
+	}
+
+	&__logo {}
+
+	&__right {
+		color: #4d4959;
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2.6px;
+		margin: 0 0 0 64px;
+	}
+}
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+@media(max-widh:1600px){
+	.container{
+		max-width: 970px;
+	}
+}
+
+@media(max-widh:992px) {
+	.container {
+		max-width: 750px;
+	}
+}
+
+@media(max-widh:767px) {
+	.container {
+		max-width: none;
+	}
+}
+
+.about {
+	&__row {
+		background-color: #f7f7f7;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__logo {
+		padding: 115px 0 0 0;
+		text-align: center;
+		
+	}
+
+	&__title {
+		padding:35px 0;
+	}
+
+	&__text {
+		color: #848789;
+		font-size: 18px;
+		text-align: center;
+		line-height: 34px;
+		padding: 0 240px 142px 280px;
+	}
+}
+
+.title {
+	color: #353738;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.work {
+	
+	&__row {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
+	}
+
+
+	&__first {
+		display: flex;
+		.work__left{
+		background: url(/img/work/bike01/rul.png) no-repeat;
+		}
+	}
+	&__left{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 66.666%;
+	}
+
+	&__right{
+		display: flex;
+		flex-direction: column;
+	}
+
+	
+	&__top{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__icon{
+		padding: 70px 0 30px 0;
+		justify-content: center;
+	}
+	&__title{
+		padding: 0 0 25px 0;
+	}
+	&__text{
+		color: #848789;
+		font-size: 16px;
+		line-height: 30px;
+		text-align: justifyLeft;
+		margin: 0 65px 95px 65px;
+		
+	}
+	&__down{
+	}
+	&__second {
+		display: flex;
+		flex-direction: row-reverse;
+		.work__left {
+				background: url(/img/work/bike02/velo.png) no-repeat;
+			}
+				work__icon{
+					
+				}
+	}
+
+	&__third {
+		display: flex;
+		.work__left {
+				background: url(/img/work/bike03/rama.png) no-repeat;
+				flex: 0 0 33.333%;
+			}
+				.work__right {
+					flex: 0 0 33.333%;
+				}
+	}
+	.work__icon{
+		padding: 61px 0 30px 0;
+	}
+}
+
+.twitter {
+
+	&__row {
+		background-color: #f7f7f7;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__logo {
+		padding: 124px 0 0 0;
+		text-align: center;
+	}
+
+	&__title {
+		color: #353738;
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+		padding: 37px 0 27px 0;
+	}
+
+	&__text {
+		color: #848789;
+		font-size: 24px;
+		font-style: italic;
+		text-align: center;
+		padding: 0 263px 104px 301px;
+	}
+	&__dot{
+		text-align: center;
+		padding: 0 0 68px 0;
+	}
+}
+
+.shop {
+
+	&__row {
+		display: flex;
+		
+	}
+
+	&__left {
+		
+	}
+
+	&__top {
+		display: flex;
+		
+	}
+
+	&__down {
+		flex: 0 0 50%;
+	}
+
+	&__center {
+		display: flex;
+	}
+
+	&__right {
+		
+		display: flex;
+		flex-direction: column-reverse;
+		.shop__down{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: url(/img/shop/Bg.png), url(/img/shop/6.png);
+		}
+		
+	}
+		&__text {
+			color: #ffffff;
+			font-weight: 700;
+			font-size: 14px;
+			letter-spacing: 2.8px;
+			text-transform: uppercase;
+			padding: 14px 0 0 0;
+		}
+
+	&__footer {
+		display: flex;
+		background-color: #282f35;
+	}
+
+	&__btn {
+		margin: 75px auto;
+		
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		padding: 20px 58px;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 700;
+	}
+}
+
+.mail {
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 110px 0 110px 0;
+	}
+
+	&__logo {
+		
+	}
+
+	&__text {
+		padding: 40px 0 35px 0;
+		color: #848789;
+		font-size: 24px;
+		font-style: italic;
+	}
+
+	&__enter {
+		display: flex;
+	}
+
+	&__window {
+		border: 1px solid #d3d7d9;
+		padding: 28px 228px 28px 28px;
+		color: #929292;
+		font-size: 20px;
+		font-style: italic;
+	}
+
+	&__btn {
+		background-color: #64c29e;
+		padding: 26px 45px;
+		margin: 0 0 0 8px;
+		font-size: 24px;
+		font-weight: 300;
+		color: #ffffff;
+	}
+}
+
+.container {}
+
+.footer {	
+	
+
+	
+	&__row {
+		background-color: #f7f7f7;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 250px;
+		align-items: center;
+		height: 250px;
+	}
+
+	&__text {
+		color: #848789;
+		font-size: 14px;
+		line-height: 17.87px;
+		font-style: italic;
+	}
+
+	&__text li:first-child{
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	&__logo {
+		margin: 0 0 0 -100px;
+	}
+
+	&__icon {
+		display: flex;
+		width: 135px;
+		justify-content: space-between;
+		
+	}
+
+	&__right {}
+
+	&__end {
+		display: flex;
+	}
+
+	&__string {
+		color: #848789;
+		font-size: 14px;
+		font-style: italic;
+		line-height: 17.87px;
+		text-align: right;
+		padding: 0 9px 0 0;
+	}
+
+	&__lable {}
+}
+
+.ny {}
