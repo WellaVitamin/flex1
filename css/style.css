@@ -96,7 +96,7 @@ body {
 }
 
 .top__row {
-  background: url(/img/top/Layer_7.png) center no-repeat;
+  background: url(../img/top/Layer_7.png) center no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,7 +196,7 @@ body {
   display: flex;
 }
 .work__first .work__left {
-  background: url(/img/work/bike01/rul.png) no-repeat;
+  background: url(../img/work/bike01/rul.png) no-repeat;
 }
 .work__left {
   display: -webkit-box;
@@ -259,7 +259,7 @@ body {
           flex-direction: row-reverse;
 }
 .work__second .work__left {
-  background: url(/img/work/bike02/velo.png) no-repeat;
+  background: url(../img/work/bike02/velo.png) no-repeat;
 }
 .work__third {
   display: -webkit-box;
@@ -267,7 +267,7 @@ body {
   display: flex;
 }
 .work__third .work__left {
-  background: url(/img/work/bike03/rama.png) no-repeat;
+  background: url(../img/work/bike03/rama.png) no-repeat;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.333%;
           flex: 0 0 33.333%;
@@ -357,7 +357,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(/img/shop/Bg.png), url(/img/shop/6.png);
+  background: url(../img/shop/Bg.png), url(../img/shop/6.png);
 }
 .shop__text {
   color: #ffffff;
